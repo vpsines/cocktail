@@ -13,7 +13,7 @@ const Art = () => {
         const maskTimeline = gsap.timeline({
             scrollTrigger: {
                 trigger: "#art",
-                start,
+                start: start,
                 end: "bottom center",
                 scrub: 1.5,
                 pin: true
@@ -34,6 +34,7 @@ const Art = () => {
             .to('#masked-content', {
                 opacity: 1,
                 duration: 1,
+                y: 50,
                 ease: "power1.inOut"
             })
 
